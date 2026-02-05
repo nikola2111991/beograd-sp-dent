@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O nama | SP DENT Petlovo Brdo, Beograd</title>
+<meta name="description" content="Upoznajte tim SP DENT ordinacije. Dr Slavisa Petkovic, specijalista oralne hirurgije. Petlovo Brdo, Beograd.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--green:#43A047;--green-dark:#1B5E20;--green-light:#E8F5E9;--text:#1a2e1a;--text-light:#4a5e4a;--bg:#fff;--bg-soft:#f6f9f6;--radius:14px;--radius-lg:20px}
+body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,0.06)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--green-dark)}
+.logo span{color:var(--green)}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-size:0.92rem;font-weight:500;color:var(--text-light);transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--green)}
+.nav-cta{background:var(--green);color:#fff;padding:10px 24px;border-radius:50px;font-weight:600;font-size:0.9rem;transition:all .2s}
+.nav-cta:hover{background:var(--green-dark)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.hamburger span{width:24px;height:2px;background:var(--text);transition:all .3s}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:#fff;padding:24px;border-bottom:1px solid #eee;z-index:99}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:14px 0;font-size:1rem;font-weight:500;color:var(--text);border-bottom:1px solid #f0f0f0}
+.mobile-menu .nav-cta{display:block;text-align:center;margin-top:16px;padding:14px 24px}
+
+.page-hero{padding:130px 24px 60px;background:linear-gradient(135deg,#f6f9f6,#e8f5e9);text-align:center}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--green-dark);margin-bottom:16px}
+.page-hero p{font-size:1.1rem;color:var(--text-light);max-width:550px;margin:0 auto}
+
+section{padding:80px 24px}
+.section-inner{max-width:1200px;margin:0 auto}
+
+/* STORY */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.story-img{border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 16px 50px rgba(0,0,0,0.1)}
+.story-img img{width:100%;height:400px;object-fit:cover}
+.story-text h2{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--green-dark);margin-bottom:20px}
+.story-text p{font-size:1rem;color:var(--text-light);line-height:1.8;margin-bottom:16px}
+
+/* NUMBERS */
+.numbers-bg{background:var(--green-dark);color:#fff;padding:60px 24px}
+.numbers-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}
+.num-item .big{font-family:'Playfair Display',serif;font-size:3rem;font-weight:700}
+.num-item .small{font-size:0.9rem;opacity:0.85;margin-top:4px}
+
+/* VALUES */
+.values-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;margin-top:48px}
+.value-card{background:#fff;border:1px solid #e8ece8;border-radius:var(--radius-lg);padding:36px 28px;text-align:center;transition:all .3s}
+.value-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.08)}
+.value-icon{width:64px;height:64px;background:var(--green-light);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+.value-icon svg{width:28px;height:28px;stroke:var(--green-dark);fill:none;stroke-width:2}
+.value-card h3{font-size:1.1rem;font-weight:700;margin-bottom:8px;color:var(--green-dark)}
+.value-card p{font-size:0.92rem;color:var(--text-light);line-height:1.65}
+
+.btn-primary{background:var(--green);color:#fff;padding:14px 32px;border-radius:50px;font-weight:600;font-size:1rem;transition:all .25s;display:inline-block}
+.btn-primary:hover{background:var(--green-dark);transform:translateY(-2px)}
+
+.cta-banner{background:var(--green-dark);padding:60px 24px;text-align:center;color:#fff}
+.cta-banner h2{font-family:'Playfair Display',serif;font-size:2.2rem;margin-bottom:12px}
+.cta-banner p{font-size:1.05rem;opacity:0.9;margin-bottom:28px}
+.btn-white{background:#fff;color:var(--green-dark);padding:14px 36px;border-radius:50px;font-weight:700;font-size:1rem;transition:all .25s;display:inline-block}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,0.2)}
+
+footer{background:#f6f9f6;border-top:1px solid #e8ece8;padding:40px 24px;text-align:center}
+footer p{font-size:0.85rem;color:var(--text-light)}
+footer a{color:var(--green);font-weight:500}
+footer small{display:block;margin-top:8px;font-size:0.78rem;color:#999}
+
+@media(max-width:900px){
+  .story{grid-template-columns:1fr}.story-img{order:-1}
+  .numbers-grid{grid-template-columns:1fr 1fr;gap:24px}
+  .values-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .nav-links{display:none}.hamburger{display:flex}
+  .page-hero{padding:110px 24px 50px}.page-hero h1{font-size:2rem}
+  .num-item .big{font-size:2.2rem}
+  .cta-banner h2{font-size:1.7rem}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<div class="nav-inner">
+  <a href="index.html" class="logo">SP <span>DENT</span></a>
+  <div class="nav-links">
+    <a href="index.html">Pocetna</a>
+    <a href="usluge.html">Usluge</a>
+    <a href="o-nama.html" class="active">O nama</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="tel:+381642192227" class="nav-cta">Pozovite nas</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Pocetna</a>
+  <a href="usluge.html">Usluge</a>
+  <a href="o-nama.html">O nama</a>
+  <a href="kontakt.html">Kontakt</a>
+  <a href="tel:+381642192227" class="nav-cta">Pozovite nas</a>
+</div>
+
+<div class="page-hero">
+  <h1>Upoznajte SP DENT</h1>
+  <p>Specijalisticka stomatoloska ordinacija na Petlovom Brdu. 4.9 na Google-u, 230 zadovoljnih pacijenata.</p>
+</div>
+
+<!-- STORY -->
+<section>
+<div class="section-inner">
+<div class="story">
+  <div class="story-img">
+    <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=700&q=80" alt="Dr Slavisa Petkovic, SP DENT" loading="lazy">
+  </div>
+  <div class="story-text">
+    <h2>Dr Slavisa Petkovic, specijalista oralne hirurgije</h2>
+    <p>SP DENT je moderna specijalisticka ordinacija na Petlovom Brdu, u opstini Rakovica. Osnivac i vodeci doktor je Dr Slavisa Petkovic, specijalista oralne hirurgije.</p>
+    <p>Ono sto pacijenti najcesce pominju je posveceenost. Petar Ciric je to najbolje opisao: covek koji je toliko posvecen, sa takvom lakocom resava probleme. Dafina Milutinovic ga naziva vrhuniskim strucnjakom sa neznim rukama.</p>
+    <p>U ordinaciji rade dva doktora, Dr Slavisa Petkovic i Dr Nebojsa Kostic, sa timom koji pacijenti opisuju kao profesionalan, brz i ljubazan. 230 recenzija na Google-u sa prosecnom ocenom 4.9 govori vise od bilo kog opisa.</p>
+    <a href="kontakt.html" class="btn-primary" style="margin-top:16px">Zakazite pregled</a>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- NUMBERS -->
+<div class="numbers-bg">
+<div class="numbers-grid">
+  <div class="num-item"><div class="big">4.9</div><div class="small">prosecna ocena na Google-u</div></div>
+  <div class="num-item"><div class="big">230</div><div class="small">recenzija pacijenata</div></div>
+  <div class="num-item"><div class="big">2</div><div class="small">specijaliste stomatologa</div></div>
+  <div class="num-item"><div class="big">6</div><div class="small">oblasti stomatologije</div></div>
+</div>
+</div>
+
+<!-- VALUES -->
+<section style="background:var(--bg-soft)">
+<div class="section-inner" style="text-align:center">
+  <h2 style="font-family:'Playfair Display',serif;font-size:2rem;color:var(--green-dark);margin-bottom:8px">Kako radimo</h2>
+  <p style="color:var(--text-light);max-width:500px;margin:0 auto">Ovo nisu marketinski slogani. Ovo su principi koje nasi pacijenti prepoznaju u svakoj poseti.</p>
+  <div class="values-grid">
+    <div class="value-card">
+      <div class="value-icon">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+      </div>
+      <h3>Posveceenost svakom pacijentu</h3>
+      <p>Svaki pacijent dobija puno vreme i paznju. Bez zurbe, bez osecaja da ste samo broj. 230 pacijenata je to prepoznalo.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h3>Bezbolnost i sigurnost</h3>
+      <p>Nezne ruke i savremene metode. Pacijenti dolaze bez straha jer znaju da ce intervencija biti bezbolna i precizna.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      </div>
+      <h3>Postovanje Vaseg vremena</h3>
+      <p>Termin znaci termin. Brzo i profesionalno, kako je Srdjan Bojinovic zapisao u jednoj od 230 recenzija.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="cta-banner">
+  <h2>Uverite se sami</h2>
+  <p>Zakazite pregled i postanite deo priceee sa 230 zadovoljnih pacijenata.</p>
+  <a href="tel:+381642192227" class="btn-white">Pozovite 064/219-2227</a>
+</div>
+
+<footer>
+  <p>&copy; 2026 SP DENT. Sva prava zadrzana.</p>
+  <small>Sajt napravio <a href="https://nikolajanjic.com" target="_blank">Nikola Janjic</a></small>
+</footer>
+
+<script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}</script>
+</body>
+</html>
