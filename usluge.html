@@ -4,197 +4,114 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Usluge | SP DENT Petlovo Brdo, Beograd</title>
-<meta name="description" content="Kompletne stomatoloske usluge: oralna hirurgija, protetika, parodontologija, implanti, estetska stomatologija. SP DENT, Petlovo Brdo.">
+<meta name="description" content="Kompletne stomatološke usluge: oralna hirurgija, protetika, parodontologija, implanti, estetska stomatologija. SP DENT, Petlovo Brdo.">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--green:#43A047;--green-dark:#1B5E20;--green-light:#E8F5E9;--text:#1a2e1a;--text-light:#4a5e4a;--bg:#ffffff;--bg-soft:#f6f9f6;--radius:14px;--radius-lg:20px}
 body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{text-decoration:none;color:inherit}
-
+img{max-width:100%;display:block}a{text-decoration:none;color:inherit}
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,0.06)}
 .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:72px}
-.logo{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--green-dark)}
-.logo span{color:var(--green)}
-.nav-links{display:flex;align-items:center;gap:32px}
-.nav-links a{font-size:0.92rem;font-weight:500;color:var(--text-light);transition:color .2s}
-.nav-links a:hover,.nav-links a.active{color:var(--green)}
-.nav-cta{background:var(--green);color:#fff;padding:10px 24px;border-radius:50px;font-weight:600;font-size:0.9rem;transition:all .2s}
-.nav-cta:hover{background:var(--green-dark)}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
-.hamburger span{width:24px;height:2px;background:var(--text);transition:all .3s}
-.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:#fff;padding:24px;border-bottom:1px solid #eee;z-index:99}
-.mobile-menu.open{display:block}
-.mobile-menu a{display:block;padding:14px 0;font-size:1rem;font-weight:500;color:var(--text);border-bottom:1px solid #f0f0f0}
-.mobile-menu .nav-cta{display:block;text-align:center;margin-top:16px;padding:14px 24px}
-
+.logo{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--green-dark)}.logo span{color:var(--green)}
+.nav-links{display:flex;align-items:center;gap:32px}.nav-links a{font-size:0.92rem;font-weight:500;color:var(--text-light);transition:color .2s}.nav-links a:hover,.nav-links a.active{color:var(--green)}
+.nav-cta{background:var(--green);color:#fff;padding:10px 24px;border-radius:50px;font-weight:600;font-size:0.9rem;transition:all .2s}.nav-cta:hover{background:var(--green-dark)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}.hamburger span{width:24px;height:2px;background:var(--text)}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:#fff;padding:24px;border-bottom:1px solid #eee;z-index:99}.mobile-menu.open{display:block}.mobile-menu a{display:block;padding:14px 0;font-size:1rem;font-weight:500;color:var(--text);border-bottom:1px solid #f0f0f0}.mobile-menu .nav-cta{display:block;text-align:center;margin-top:16px;padding:14px 24px}
 .page-hero{padding:130px 24px 60px;background:linear-gradient(135deg,#f6f9f6,#e8f5e9);text-align:center}
 .page-hero h1{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--green-dark);margin-bottom:16px}
 .page-hero p{font-size:1.1rem;color:var(--text-light);max-width:550px;margin:0 auto}
-
-section{padding:80px 24px}
-.section-inner{max-width:1200px;margin:0 auto}
-.section-tag{display:inline-block;background:var(--green-light);color:var(--green-dark);padding:6px 16px;border-radius:50px;font-size:0.82rem;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:16px}
-
-.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:0}
-.service-card{background:#fff;border:1px solid #e8ece8;border-radius:var(--radius-lg);overflow:hidden;transition:all .3s}
-.service-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.08)}
+section{padding:80px 24px}.section-inner{max-width:1200px;margin:0 auto}
+.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.service-card{background:#fff;border:1px solid #e8ece8;border-radius:var(--radius-lg);overflow:hidden;transition:all .3s}.service-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.08)}
 .service-card img{width:100%;height:220px;object-fit:cover}
-.service-body{padding:28px}
-.service-body h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--green-dark);margin-bottom:10px}
+.service-body{padding:28px}.service-body h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--green-dark);margin-bottom:10px}
 .service-body p{font-size:0.95rem;color:var(--text-light);line-height:1.7;margin-bottom:16px}
-.service-details{font-size:0.88rem;color:var(--text-light);padding:12px 0;border-top:1px solid #f0f0f0}
-.service-details strong{color:var(--text)}
-.btn-primary{background:var(--green);color:#fff;padding:12px 28px;border-radius:50px;font-weight:600;font-size:0.92rem;transition:all .25s;display:inline-block}
-.btn-primary:hover{background:var(--green-dark);transform:translateY(-2px)}
-.btn-secondary{background:#fff;color:var(--green-dark);padding:12px 28px;border-radius:50px;font-weight:600;font-size:0.92rem;border:2px solid var(--green);transition:all .25s;display:inline-block}
-.btn-secondary:hover{background:var(--green-light)}
-
-.cta-banner{background:var(--green-dark);padding:60px 24px;text-align:center;color:#fff}
-.cta-banner h2{font-family:'Playfair Display',serif;font-size:2.2rem;margin-bottom:12px}
-.cta-banner p{font-size:1.05rem;opacity:0.9;margin-bottom:28px}
-.btn-white{background:#fff;color:var(--green-dark);padding:14px 36px;border-radius:50px;font-weight:700;font-size:1rem;transition:all .25s;display:inline-block}
-.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,0.2)}
-
-footer{background:#f6f9f6;border-top:1px solid #e8ece8;padding:40px 24px;text-align:center}
-footer p{font-size:0.85rem;color:var(--text-light)}
-footer a{color:var(--green);font-weight:500}
-footer small{display:block;margin-top:8px;font-size:0.78rem;color:#999}
-
+.service-details{font-size:0.88rem;color:var(--text-light);padding:12px 0;border-top:1px solid #f0f0f0}.service-details strong{color:var(--text)}
+.btn-primary{background:var(--green);color:#fff;padding:12px 28px;border-radius:50px;font-weight:600;font-size:0.92rem;transition:all .25s;display:inline-block}.btn-primary:hover{background:var(--green-dark);transform:translateY(-2px)}
+.cta-banner{background:var(--green-dark);padding:60px 24px;text-align:center;color:#fff}.cta-banner h2{font-family:'Playfair Display',serif;font-size:2.2rem;margin-bottom:12px}.cta-banner p{font-size:1.05rem;opacity:0.9;margin-bottom:28px}
+.btn-white{background:#fff;color:var(--green-dark);padding:14px 36px;border-radius:50px;font-weight:700;font-size:1rem;transition:all .25s;display:inline-block}.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,0.2)}
+footer{background:#f6f9f6;border-top:1px solid #e8ece8;padding:40px 24px;text-align:center}footer p{font-size:0.85rem;color:var(--text-light)}footer a{color:var(--green);font-weight:500}footer small{display:block;margin-top:8px;font-size:0.78rem;color:#999}
 @media(max-width:900px){.services-grid{grid-template-columns:1fr}}
-@media(max-width:768px){
-  .nav-links{display:none}.hamburger{display:flex}
-  .page-hero{padding:110px 24px 50px}.page-hero h1{font-size:2rem}
-  .cta-banner h2{font-size:1.7rem}
-}
+@media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}.page-hero{padding:110px 24px 50px}.page-hero h1{font-size:2rem}.cta-banner h2{font-size:1.7rem}}
 </style>
 </head>
 <body>
-
-<nav class="nav">
-<div class="nav-inner">
+<nav class="nav"><div class="nav-inner">
   <a href="index.html" class="logo">SP <span>DENT</span></a>
-  <div class="nav-links">
-    <a href="index.html">Pocetna</a>
-    <a href="usluge.html" class="active">Usluge</a>
-    <a href="o-nama.html">O nama</a>
-    <a href="kontakt.html">Kontakt</a>
-    <a href="tel:+381642192227" class="nav-cta">Pozovite nas</a>
-  </div>
+  <div class="nav-links"><a href="index.html">Početna</a><a href="usluge.html" class="active">Usluge</a><a href="o-nama.html">O nama</a><a href="kontakt.html">Kontakt</a><a href="tel:+381642192227" class="nav-cta">Pozovite nas</a></div>
   <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
-</div>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Pocetna</a>
-  <a href="usluge.html">Usluge</a>
-  <a href="o-nama.html">O nama</a>
-  <a href="kontakt.html">Kontakt</a>
-  <a href="tel:+381642192227" class="nav-cta">Pozovite nas</a>
-</div>
+</div></nav>
+<div class="mobile-menu" id="mobileMenu"><a href="index.html">Početna</a><a href="usluge.html">Usluge</a><a href="o-nama.html">O nama</a><a href="kontakt.html">Kontakt</a><a href="tel:+381642192227" class="nav-cta">Pozovite nas</a></div>
 
 <div class="page-hero">
-  <h1>Kompletna stomatoloska nega</h1>
-  <p>Sve sto Vam je potrebno na jednom mestu. Od redovnih pregleda do najslozenijih intervencija.</p>
+  <h1>Kompletna stomatološka nega</h1>
+  <p>Sve što Vam je potrebno na jednom mestu. Od redovnih pregleda do najsloženijih intervencija.</p>
 </div>
 
-<section>
-<div class="section-inner">
-<div class="services-grid">
-
+<section><div class="section-inner"><div class="services-grid">
   <div class="service-card">
     <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=600&q=80" alt="Oralna hirurgija SP DENT" loading="lazy">
     <div class="service-body">
       <h3>Oralna hirurgija</h3>
-      <p>Specijalizacija Dr Slavise Petkovica. Od vadjenja umnjaka do kompleksnih hirurskih zahvata. Pacijenti najcesce kazu: resava probleme sa lakocom.</p>
-      <div class="service-details">
-        <strong>Za koga:</strong> Pacijenti kojima je potrebno vadjenje zuba, hirursko resavanje upala, uklanjanje cista.<br>
-        <strong>Trajanje:</strong> Zavisno od intervencije, 30 do 90 minuta.
-      </div>
-      <a href="tel:+381642192227" class="btn-primary" style="margin-top:12px">Zakazite pregled</a>
+      <p>Specijalizacija Dr Slaviše Petkovića. Od vađenja umnjaka do kompleksnih hirurških zahvata. Pacijenti najčešće kažu: rešava probleme sa lakoćom.</p>
+      <div class="service-details"><strong>Za koga:</strong> Pacijenti kojima je potrebno vađenje zuba, hirurško rešavanje upala, uklanjanje cista.<br><strong>Trajanje:</strong> Zavisno od intervencije, 30 do 90 minuta.</div>
+      <a href="tel:+381642192227" class="btn-primary" style="margin-top:12px">Zakažite pregled</a>
     </div>
   </div>
-
   <div class="service-card">
-    <img src="https://images.unsplash.com/photo-1629909615957-be67e4c0e7a3?auto=format&fit=crop&w=600&q=80" alt="Stomatoloska protetika" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1629909615957-be67e4c0e7a3?auto=format&fit=crop&w=600&q=80" alt="Stomatološka protetika" loading="lazy">
     <div class="service-body">
-      <h3>Stomatoloska protetika</h3>
-      <p>Krunice, mostovi, proteze. Nadoknada izgubljenih zuba koja izgleda i funkcionise kao pravi zubi. Radimo sa najkvalitetnijim materijalima.</p>
-      <div class="service-details">
-        <strong>Za koga:</strong> Pacijenti sa ostecenim ili nedostajucim zubima kojima je potrebna trajna nadoknada.<br>
-        <strong>Ukljucuje:</strong> Keramicke krunice, metalno-keramicki mostovi, totalne i parcijalne proteze.
-      </div>
-      <a href="tel:+381642192227" class="btn-primary" style="margin-top:12px">Zakazite konsultaciju</a>
+      <h3>Stomatološka protetika</h3>
+      <p>Krunice, mostovi, proteze. Nadoknada izgubljenih zuba koja izgleda i funkcioniše kao pravi zubi. Radimo sa najkvalitetnijim materijalima.</p>
+      <div class="service-details"><strong>Za koga:</strong> Pacijenti sa oštećenim ili nedostajućim zubima kojima je potrebna trajna nadoknada.<br><strong>Uključuje:</strong> Keramičke krunice, metalno-keramički mostovi, totalne i parcijalne proteze.</div>
+      <a href="tel:+381642192227" class="btn-primary" style="margin-top:12px">Zakažite konsultaciju</a>
     </div>
   </div>
-
   <div class="service-card">
     <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Konzervativna stomatologija" loading="lazy">
     <div class="service-body">
-      <h3>Lecenje zuba i prevencija</h3>
-      <p>Lecenje karijesa, popravke zuba, endodoncija. Koristimo savremene materijale i metode da sacuvamo svaki zub koji se moze sacuvati.</p>
-      <div class="service-details">
-        <strong>Za koga:</strong> Svi koji zele zdrave zube. Redovni pregledi, plombiranja, lecenje kanala korena.<br>
-        <strong>Trajanje:</strong> 30 do 60 minuta za vecinu intervencija.
-      </div>
-      <a href="tel:+381642192227" class="btn-primary" style="margin-top:12px">Zakazite pregled</a>
+      <h3>Lečenje zuba i prevencija</h3>
+      <p>Lečenje karijesa, popravke zuba, endodoncija. Koristimo savremene materijale i metode da sačuvamo svaki zub koji se može sačuvati.</p>
+      <div class="service-details"><strong>Za koga:</strong> Svi koji žele zdrave zube. Redovni pregledi, plombiranja, lečenje kanala korena.<br><strong>Trajanje:</strong> 30 do 60 minuta za većinu intervencija.</div>
+      <a href="tel:+381642192227" class="btn-primary" style="margin-top:12px">Zakažite pregled</a>
     </div>
   </div>
-
   <div class="service-card">
     <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=600&q=80" alt="Parodontologija" loading="lazy">
     <div class="service-body">
       <h3>Parodontologija i oralna medicina</h3>
-      <p>Lecenje bolesti desni i potpornog aparata zuba. Zdrave desni su temelj zdravih zuba. Dijagnostikujemo i lecimo probleme koji se cesto zanemaruju.</p>
-      <div class="service-details">
-        <strong>Za koga:</strong> Pacijenti sa krvarenjem desni, osetljivoscu, pokretnoscu zuba.<br>
-        <strong>Ukljucuje:</strong> Uklanjanje kamenca, dubinsko ciscenje, terapija parodontopatije.
-      </div>
-      <a href="tel:+381642192227" class="btn-primary" style="margin-top:12px">Zakazite pregled</a>
+      <p>Lečenje bolesti desni i potpornog aparata zuba. Zdrave desni su temelj zdravih zuba. Dijagnostikujemo i lečimo probleme koji se često zanemaruju.</p>
+      <div class="service-details"><strong>Za koga:</strong> Pacijenti sa krvarenjem desni, osetljivošću, pokretljivošću zuba.<br><strong>Uključuje:</strong> Uklanjanje kamenca, dubinsko čišćenje, terapija parodontopatije.</div>
+      <a href="tel:+381642192227" class="btn-primary" style="margin-top:12px">Zakažite pregled</a>
     </div>
   </div>
-
   <div class="service-card">
     <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&fit=crop&w=600&q=80" alt="Zubni implanti" loading="lazy">
     <div class="service-body">
       <h3>Zubni implanti</h3>
-      <p>Trajno resenje za izgubljene zube. Implant zamenjuje koren zuba i daje osnovu za krunicu koja izgleda potpuno prirodno.</p>
-      <div class="service-details">
-        <strong>Za koga:</strong> Pacijenti kojima nedostaje jedan ili vise zuba i zele trajno resenje.<br>
-        <strong>Proces:</strong> Pregled, planiranje, ugradnja implanta, period zarastanja, postavljanje krunice.
-      </div>
-      <a href="tel:+381642192227" class="btn-primary" style="margin-top:12px">Zakazite konsultaciju</a>
+      <p>Trajno rešenje za izgubljene zube. Implant zamenjuje koren zuba i daje osnovu za krunicu koja izgleda potpuno prirodno.</p>
+      <div class="service-details"><strong>Za koga:</strong> Pacijenti kojima nedostaje jedan ili više zuba i žele trajno rešenje.<br><strong>Proces:</strong> Pregled, planiranje, ugradnja implanta, period zarastanja, postavljanje krunice.</div>
+      <a href="tel:+381642192227" class="btn-primary" style="margin-top:12px">Zakažite konsultaciju</a>
     </div>
   </div>
-
   <div class="service-card">
     <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=600&q=80" alt="Estetska stomatologija" loading="lazy">
     <div class="service-body">
       <h3>Estetska stomatologija</h3>
-      <p>Beljenje zuba, fasete, estetske korekcije. Za osmeh koji ce Vas ispuniti samopouzdanjem. Zahvaljujuci njemu, ja se sada smejem, napisala je Dafina.</p>
-      <div class="service-details">
-        <strong>Za koga:</strong> Svako ko zeli lepsi osmeh, korekciju boje, oblika ili polozaja zuba.<br>
-        <strong>Ukljucuje:</strong> Profesionalno beljenje, kompozitne fasete, keramicke ljuske.
-      </div>
-      <a href="tel:+381642192227" class="btn-primary" style="margin-top:12px">Zakazite konsultaciju</a>
+      <p>Beljenje zuba, fasete, estetske korekcije. Za osmeh koji će Vas ispuniti samopouzdanjem. Zahvaljujući njemu, ja se sada smejem, napisala je Dafina.</p>
+      <div class="service-details"><strong>Za koga:</strong> Svako ko želi lepši osmeh, korekciju boje, oblika ili položaja zuba.<br><strong>Uključuje:</strong> Profesionalno beljenje, kompozitne fasete, keramičke ljuske.</div>
+      <a href="tel:+381642192227" class="btn-primary" style="margin-top:12px">Zakažite konsultaciju</a>
     </div>
   </div>
-
-</div>
-</div>
-</section>
+</div></div></section>
 
 <div class="cta-banner">
   <h2>Niste sigurni koja usluga Vam treba?</h2>
-  <p>Zakazite besplatan pregled. Napravicemo plan zajedno.</p>
+  <p>Zakažite besplatan pregled. Napravićemo plan zajedno.</p>
   <a href="tel:+381642192227" class="btn-white">Pozovite 064/219-2227</a>
 </div>
-
-<footer>
-  <p>&copy; 2026 SP DENT. Sva prava zadrzana.</p>
-  <small>Sajt napravio <a href="https://nikolajanjic.com" target="_blank">Nikola Janjic</a></small>
-</footer>
-
+<footer><p>&copy; 2026 SP DENT. Sva prava zadržana.</p><small>Sajt napravio <a href="https://nikolajanjic.com" target="_blank">Nikola Janjić</a></small></footer>
 <script>function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}</script>
 </body>
 </html>
